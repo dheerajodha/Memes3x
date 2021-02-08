@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+        <title>Spring Boot File Upload / Download Rest API Example</title>
+        <link rel="stylesheet" href="/css/main.css" />
+    </head>
+    <body>
+        <noscript>
+            <h2>Sorry! Your browser doesn't support Javascript</h2>
+        </noscript>
+        <div class="upload-container">
+            <div class="upload-header">
+                <h2>Spring Boot File Upload / Download Rest API Example</h2>
+            </div>
+            <div class="upload-content">
+                <div class="single-upload">
+                    <h3>Upload Single File</h3>
+                    <form id="singleUploadForm" name="singleUploadForm" action="http://localhost:8080/memes/" method="POST" enctype="multipart/form-data">
+                        <input id="name" name="name" type="text" class="file-input" required />
+                        <input id="caption" name="caption" type="text" class="file-input" required />
+                        <input id="url" name="url" type="url" class="file-input" required />
+                        <button type="submit" class="primary submit-btn">Submit</button>
+                    </form>
+                    <div class="upload-response">
+                        <div id="singleFileUploadError"></div>
+                        <div id="singleFileUploadSuccess"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div>
+            <button id="myButton" class="float-left submit-button">View Memes</button>
+        </div>
+
+        <script src="/js/main.js" ></script>
+    </body>
+</html>
