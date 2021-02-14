@@ -1,4 +1,4 @@
-package com.crio.xmeme;
+package com.crio.xmeme.entity;
 
 import org.hibernate.annotations.GenericGenerator;
 
@@ -15,6 +15,7 @@ public class Image {
     
 	private String caption;
 
+	//Lob, because sometimes URL can be very large in size
     @Lob
     private String url;
 
