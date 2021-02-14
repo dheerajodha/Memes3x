@@ -1,9 +1,9 @@
-package com.crio.xmeme;
+package com.crio.xmeme.dto;
 
-public class UploadImageResponse {
+public class UploadImageResponseDTO {
 	private Long id;
 	
-    public UploadImageResponse(Long id) {
+    public UploadImageResponseDTO(Long id) {
         this.id = id;
     }
 

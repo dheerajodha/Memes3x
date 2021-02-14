@@ -2,15 +2,27 @@
 <html>
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
-        <title>Spring Boot File Upload / Download Rest API Example</title>
+        <title>XMEME</title>
+        <link rel="stylesheet" href="/css/viewMemes.css" />
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin&display=swap" rel="stylesheet">
     </head>	
-    <body id="body">
+    <body>
+        <button id="back-btn" onclick="goBackToMainPage()">Go Back</button>
+        <h1 id="welcome-heading">Welcome to XMEME: Online Meme Portal</h1>
         <noscript>
             <h2>Sorry! Your browser doesn't support Javascript</h2>
         </noscript>
         
-        <div id="viewMemes" class="upload-container"></div>
+        <div id="viewMemes">
+        	<div class="card">
+                <h1 id="name"></h1>
+                <p id="caption"></p>
+                <img id="url">
+        		<!--button onclick="openPatchForm()">I'm here to Edit a Meme</button-->
+        	</div>
+        </div>
         
-        <script src="/js/viewMemes.js" ></script>
+        <script type="text/javascript" src="/js/viewMemes.js/"></script>
     </body>
 </html>

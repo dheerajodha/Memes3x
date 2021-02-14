@@ -1,6 +1,6 @@
-package com.crio.xmeme;
+package com.crio.xmeme.dto;
 
-public class ImageDetails {
+public class ImageDetailsDTO {
 	private String name;
 	private String caption;
 	private String url;
