@@ -68,5 +68,5 @@ function goBackToMainPage() {
 }
 
 //Here, we call a GET request to fetch all the memes from our database via GET Endpoint of our API
-xmlhttp.open("GET", "http://localhost:8080/memes/");
+xmlhttp.open("GET", "http://54.205.100.247:8080/memes/");
 xmlhttp.send();
